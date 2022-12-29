@@ -9,7 +9,7 @@ from worldcat.request.search import SearchAPIRequest
 from worldcat.util.extract import extract_elements
 
 
-# SRURequest class was created to replace the existing SRURequest class in WorldCat that has an incorrect API URL which is causing 
+# SRURequestV2 class was created to replace the existing SRURequest class in WorldCat that has an incorrect API URL which is causing 
 # breakage with our pull_titles.py script.  This class is a copy of the existing SRURequest class with the exception of the api_url()
 # method which has been updated to use the correct API URL.  This class should be removed once the WorldCat API is fixed.
 # http_get is also overidden to include User-Agent in request to prevent OCLC API from missclassifying our requests as spam.
