@@ -1,13 +1,7 @@
 import urllib2
 import urllib
-from exceptions import StopIteration
 
-from worldcat.exceptions import APIKeyError, APIKeyNotSpecifiedError, \
-                                EmptyQueryError, EmptyRecordNumberError, \
-                                InvalidArgumentError, ExtractError
 from worldcat.request.search import SRURequest
-from worldcat.util.extract import extract_elements
-
 
 # SRURequestV2 class was created to replace the existing SRURequest class in WorldCat that has an incorrect API URL which is causing 
 # breakage with our pull_titles.py script.  This class is a copy of the existing SRURequest class with the exception of the api_url()
