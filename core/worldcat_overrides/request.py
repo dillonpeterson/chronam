@@ -10,7 +10,7 @@ from worldcat.request.search import SRURequest
 class SRURequestV2(SRURequest):
     def api_url(self):
         # Updated URL to use the correct API URL
-        self.url = 'http://worldcat.org/webservices/catalog/search/worldcat/sru'
+        self.url = 'https://worldcat.org/webservices/catalog/search/worldcat/sru'
 
     def http_get(self):
         """HTTP Get method for all WorldCatRequests."""
